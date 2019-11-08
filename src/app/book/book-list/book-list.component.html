@@ -15,4 +15,6 @@
   </tbody>
 </table>
 
-<ngb-book [book]="selectedBook"></ngb-book>
+<ngb-book [book]="selectedBook" (createNewBook)="saveBook($event)">
+
+</ngb-book>

@@ -8,12 +8,12 @@ import { Book } from '../models/book';
 })
 export class BookListComponent implements OnInit {
 
-  selectedBook: Book;
+  selectedBook: Book = new Book();
 
   books: Book[] = [
     { id: 1, name: 'A storm of sword', isbn: '123-4567-89' },
-    { id: 2, name: 'The', isbn: '123-4567-89' },
-    { id: 3, name: 'A storm of sword', isbn: '123-4567-89' },
+    { id: 2, name: 'The Eye', isbn: '123-4567-89' },
+    { id: 3, name: 'A storm of sword 2', isbn: '123-4567-89' },
   ];
 
   constructor() { }
@@ -23,6 +23,11 @@ export class BookListComponent implements OnInit {
 
   selectBook(book: Book) {
     this.selectedBook = book;
+  }
+
+  saveBook(book: Book) {
+    book.id = this.books[this.books.length - 1].id + 1;
+    this.books.push(book);
   }
 
 }
