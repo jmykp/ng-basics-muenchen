@@ -3,8 +3,8 @@
     [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
+      <a mat-list-item routerLink="">Dashboard</a>
+      <a mat-list-item routerLink="/books">Books</a>
       <a mat-list-item href="#">Link 3</a>
     </mat-nav-list>
   </mat-sidenav>
@@ -15,6 +15,6 @@
       </button>
       <span>ng-basics-muenchen</span>
     </mat-toolbar>
-    <ngb-dashboard></ngb-dashboard>
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
