@@ -28,39 +28,7 @@
     {
       "id": 2,
       "name": "Walder",
-      "isFemale": false,
-      "culture": "test",
-      "titles": [],
-      "aliases": [
-        "Hodor"
-      ],
-      "born": "",
-      "died": "",
-      "father": null,
-      "mother": null,
-      "spouse": null,
-      "children": [],
-      "allegiances": [
-        362
-      ],
-      "books": [
-        1,
-        2,
-        3,
-        5,
-        8
-      ],
-      "povBooks": [],
-      "playedBy": [
-        "Kristian Nairn"
-      ],
-      "tvSeries": [
-        "Season 1",
-        "Season 2",
-        "Season 3",
-        "Season 4",
-        "Season 6"
-      ]
+      "culture": "test"
     },
     {
       "id": 3,
@@ -91,29 +59,8 @@
     },
     {
       "id": 4,
-      "name": "",
-      "isFemale": true,
-      "culture": "Braavosi",
-      "titles": [],
-      "aliases": [
-        "The Merling Queen"
-      ],
-      "born": "",
-      "died": "",
-      "father": null,
-      "mother": null,
-      "spouse": null,
-      "children": [],
-      "allegiances": [],
-      "books": [
-        5,
-        8
-      ],
-      "povBooks": [],
-      "playedBy": [
-        ""
-      ],
-      "tvSeries": []
+      "name": "Test",
+      "culture": "Braavosi"
     },
     {
       "id": 5,
@@ -142,28 +89,8 @@
     },
     {
       "id": 6,
-      "name": "",
-      "isFemale": true,
-      "culture": "Braavosi",
-      "titles": [],
-      "aliases": [
-        "The Poetess"
-      ],
-      "born": "",
-      "died": "",
-      "father": null,
-      "mother": null,
-      "spouse": null,
-      "children": [],
-      "allegiances": [],
-      "books": [
-        5
-      ],
-      "povBooks": [],
-      "playedBy": [
-        ""
-      ],
-      "tvSeries": []
+      "name": "fdf",
+      "culture": "Braavosi"
     },
     {
       "id": 7,

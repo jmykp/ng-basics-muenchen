@@ -24,4 +24,8 @@ export class CharacterService {
     return this.http.get<Character>(`${this.baseUrl}/${id}`);
     // return this.http.get<Character>(this.baseUrl + '/' + id);
   }
+
+  updateCharacter(character: Character): Observable<any> {
+    return this.http.put(`${this.baseUrl}/${character.id}`, character);
+  }
 }

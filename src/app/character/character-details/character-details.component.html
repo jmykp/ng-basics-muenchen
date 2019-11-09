@@ -1,1 +1,16 @@
 <p>{{character?.name}}</p>
+
+<form [formGroup]="form" (ngSubmit)="saveCharacter()">
+  <div>
+    <label for="name">Name</label>
+    <input type="text" formControlName="name">
+    <p *ngIf="form.invalid">Das Feld ist invalid</p>
+  </div>
+  <div>
+    <label for="culture">Culture</label>
+    <input type="text" formControlName="culture">
+  </div>
+  <div>
+    <button type="submit">Speichern</button>
+  </div>
+</form>
