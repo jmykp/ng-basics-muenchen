@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CharacterListComponent } from './character-list/character-list.component';
 import { CharacterDetailsComponent } from './character-details/character-details.component';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -10,7 +11,8 @@ import { RouterModule } from '@angular/router';
   declarations: [CharacterListComponent, CharacterDetailsComponent],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule
   ]
 })
 export class CharacterModule { }
