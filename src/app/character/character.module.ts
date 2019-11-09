@@ -5,6 +5,7 @@ import { CharacterDetailsComponent } from './character-details/character-details
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CharacterRoutingModule } from './character-routing.module';
 
 
 
@@ -14,7 +15,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     RouterModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CharacterRoutingModule
   ]
 })
 export class CharacterModule { }

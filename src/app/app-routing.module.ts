@@ -15,16 +15,8 @@ const routes: Routes = [{
   component: BookListComponent
 }, {
   path: 'characters',
-  children: [
-    {
-      path: '',
-      component: CharacterListComponent
-    },
-    {
-      path: ':id',
-      component: CharacterDetailsComponent
-    }
-  ]
+  loadChildren: () => import('./character/character.module')
+    .then(module => module.CharacterModule),
 }];
 
 @NgModule({
